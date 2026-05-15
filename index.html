@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>YAN Taxi</h1>
+        <p>Быстрый заказ такси</p>
+
+        <input type="text" placeholder="Откуда">
+        <input type="text" placeholder="Куда">
+
+        <select>
+            <option>Эконом</option>
+            <option>Комфорт</option>
+            <option>Бизнес</option>
+        </select>
+
+        <button>Заказать такси</button>
+<select id="carType">
+    <option value="150">Эконом</option>
+    <option value="250">Комфорт</option>
+    <option value="400">Бизнес</option>
+</select>
+
+<button onclick="calculatePrice()">
+    Заказать такси
+</button>
+
+<h2 id="price"></h2>
+
+<script src="script.js"></script>
+    </div>
+
+</div>
+
+</body>
+</html>
